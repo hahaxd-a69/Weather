@@ -1,0 +1,95 @@
+body {
+  background: linear-gradient(to top right, #a1c4fd, #c2e9fb);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+#clock {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #005dd1;
+}
+
+.unit-options {
+  margin: 15px 0;
+  font-size: 1rem;
+}
+
+.unit-options label {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+#weather-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#weather-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 10px 0;
+}
+
+#forecast {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0 0 0;
+  }
+
+  #weather-container {
+    width: 100%;
+  }
+}
